@@ -1,0 +1,25 @@
+ProyectBD/
+    ├── dto/                  ← DTOs (Data Transfer Objects)
+    │   └── ProductoDTO.java
+    │
+    ├── modelo/               ← Entidades de la base de datos)
+    │   ├── Categoria.java
+    │   └── Producto.java
+    │
+    ├── persistencia/         ← Capa de acceso a datos (DAO e implementaciones)
+    │   ├── dao/              ← Interfaces DAO
+    │   │   ├── CategoriaDAO.java
+    │   │   └── ProductoDAO.java
+    │   │
+    │   └── impl/             ← Implementaciones DAO
+    │       ├── CategoriaDAOImpl.java
+    │       └── ProductoDAOImpl.java
+    │
+    ├── servicio/             ← Capa de lógica
+    │   └── ProdCateService.java
+    │
+    ├── util/                 ← Utilidades comunes (conexión, validación, etc.)
+    │   ├── ConexionDB.java   ← La conexión a la base de datos
+    │   └── Validador.java    ← El validador de campos para los modelos
+    │
+    └── Main.java             ← La consola
